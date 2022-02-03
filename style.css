@@ -1,0 +1,53 @@
+.logo{
+    width:170px;
+    height:130px;
+    margin-left:-10px;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background: #FFFFFF;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.logobar{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.navbar li{
+    list-style:none;
+    padding: 0 20px;
+    transition:0.4s ease;
+    position:relative;
+}
+
+.logobar li{
+    list-style:none;
+    padding: 0 20px;
+}
+
+.navbar li:hover,
+.navbar li:active{
+    color:pink;
+}
+
+.navbar li:active::after,
+.navbar li:hover::after{
+    content:"";
+    width: 30%;
+    height:2px;
+    background:pink;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+}
